@@ -1,0 +1,45 @@
+eureka:
+  client:
+    healthcheck:
+      enabled: true #健康检测，这个一定要在application.yml文件中，否则可能出现Eureka状态为Unknown的问题
+    registry-fetch-interval-seconds: 10        # 默认为30秒
+    serviceUrl:
+      defaultZone: http://122.51.164.77:8001/eureka
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: ljq-gateway
+server:
+  port: 8000
+#zuul 网关配置
+zuul:
+  ribbon-isolation-strategy: thread
+  stripPrefix: true
+  host:
+    maxTotalConnections: 200
+    maxPerRouteConnections: 20
+  routes:
+    weixinA:
+      path: /weixinA/**
+      serviceId: weixinA
+      sensitiveHeaders: Cookie,Set-Cookie
+      strip-prefix: true
+    fuwuB:
+      path: /fuwuB-Api/**
+      serviceId: fuwuB
+      sensitiveHeaders: Cookie,Set-Cookie
+      strip-prefix: true
+#ribbon配置
+ribbon:
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 0
+  ReadTimeout: 60000
+  ConnectTimeout: 30000
+#Histrix 配置
+default:
+  execution:
+    isolation:
+      thread:
+        timeoutInMilliseconds: 60000
+

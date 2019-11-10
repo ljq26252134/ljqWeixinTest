@@ -1,0 +1,14 @@
+E:\eclipseWork\weixin\wenxin\ljq-common\src\main\java\org\ljq\common\web\ApiResponse.java
+E:\eclipseWork\weixin\wenxin\ljq-common\src\main\java\org\ljq\feign\fallback\UserTestApiClientFallbackFactory.java
+E:\eclipseWork\weixin\wenxin\ljq-common\src\main\java\org\ljq\interceptor\AuthenticationInterceptor.java
+E:\eclipseWork\weixin\wenxin\ljq-common\src\main\java\org\ljq\common\security\Constant.java
+E:\eclipseWork\weixin\wenxin\ljq-common\src\main\java\org\ljq\common\web\BaseController.java
+E:\eclipseWork\weixin\wenxin\ljq-common\src\main\java\org\ljq\context\AuthConstant.java
+E:\eclipseWork\weixin\wenxin\ljq-common\src\main\java\org\ljq\interceptor\AuthenticationInterceptorConfig.java
+E:\eclipseWork\weixin\wenxin\ljq-common\src\main\java\org\ljq\context\UserHolder.java
+E:\eclipseWork\weixin\wenxin\ljq-common\src\main\java\org\ljq\common\security\JwtTokenUtil.java
+E:\eclipseWork\weixin\wenxin\ljq-common\src\main\java\org\ljq\common\security\SecurityConfigProperties.java
+E:\eclipseWork\weixin\wenxin\ljq-common\src\main\java\org\ljq\common\web\ApiResponseBuilder.java
+E:\eclipseWork\weixin\wenxin\ljq-common\src\main\java\org\ljq\common\security\UserToken.java
+E:\eclipseWork\weixin\wenxin\ljq-common\src\main\java\org\ljq\interceptor\FeignIntercepterConfig.java
+E:\eclipseWork\weixin\wenxin\ljq-common\src\main\java\org\ljq\feign\UserTestApi.java

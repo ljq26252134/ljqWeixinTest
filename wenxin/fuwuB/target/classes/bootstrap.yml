@@ -1,0 +1,35 @@
+server:
+  port: 18002
+spring:
+  application:
+    name: fuwuB
+eureka:
+  client:
+    healthcheck:
+      enabled: true #健康检测，这个一定要在application.yml文件中，否则可能出现Eureka状态为Unknown的问题
+    registry-fetch-interval-seconds: 10        # 默认为30秒
+    serviceUrl:
+      defaultZone: http://122.51.164.77:8001/eureka
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10 
+#hystrix的超时时间
+hystrix:
+    command:
+        default:
+            execution:
+              timeout:
+                enabled: true
+              isolation:
+                    thread:
+                        timeoutInMilliseconds: 30000 #缺省为1000 
+#ribbon的超时时间
+ribbon:
+  ReadTimeout: 30000
+  ConnectTimeout: 3000 
+  MaxAutoRetries: 0 #同一台实例最大重试次数,不包括首次调用
+  MaxAutoRetriesNextServer: 0 #重试负载均衡其他的实例最大重试次数,不包括首次调用
+  OkToRetryOnAllOperations: false  #是否所有操作都重试  
+
+
