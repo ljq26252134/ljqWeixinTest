@@ -1,11 +1,6 @@
-package org.ljq.context;
+﻿package org.ljq.context;
 
-/**
- * 权限相关内容
- * 
- * @author Yaky
- *
- */
+
 public class AuthConstant {
 
 	/**

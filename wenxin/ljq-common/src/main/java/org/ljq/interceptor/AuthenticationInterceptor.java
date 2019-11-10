@@ -1,4 +1,4 @@
-package org.ljq.interceptor;
+﻿package org.ljq.interceptor;
 
 import java.util.List;
 
@@ -16,12 +16,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.util.AntPathMatcher;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-/**
- * 单体权限拦截器
- * 
- * @author Yaky
- *
- */
+
 public class AuthenticationInterceptor extends HandlerInterceptorAdapter {
 
 	@Autowired

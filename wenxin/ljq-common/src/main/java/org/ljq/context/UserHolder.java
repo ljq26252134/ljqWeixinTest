@@ -1,16 +1,10 @@
-package org.ljq.context;
+﻿package org.ljq.context;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
 
-/**
- * 用户上下文信息拥有者
- * 
- * @author Yaky
- *
- */
 public class UserHolder {
 
 	public static ThreadLocal<Map<String, Object>> threadLocal = new InheritableThreadLocal<Map<String, Object>>();
